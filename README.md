@@ -14,3 +14,6 @@ TO run - npm run dev
 CREATE & RUN PROJECT
 npm create-react-app
 npm run start
+
+
+rafce - shortcut for React compiennt code
