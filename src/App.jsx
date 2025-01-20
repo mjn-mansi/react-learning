@@ -1,10 +1,7 @@
-import BlogPage from "./BlogPage"
 import "./index.css"
 
 function App() {
-  return (
-    <BlogPage />
-  )
+	<>App</>
 }
 
 export default App

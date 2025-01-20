@@ -9,6 +9,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Layout from './Layout.jsx'
 import BlogPage from './BlogPage.jsx'
 import User from './User.jsx'
+import Theme from './Theme.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter(
       <Route path='password-generator' element={<PasswordGenerator />}></Route>
       <Route path='blogs/:username' element={<BlogPage />}></Route>
       <Route path='login' element={<User />}></Route>
+      <Route path='theme' element={<Theme />}></Route>
     </Route>
   )
 )
