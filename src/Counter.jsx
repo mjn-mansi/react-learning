@@ -6,9 +6,12 @@ function Counter() {
     const incCounter = () => counter < 20 ? setCounter(counter + 1) : ''
 
     return <>
-        <button onClick={decCounter}>-</button>
-        <h1>{counter}</h1>
-        <button onClick={incCounter}>+</button>
+        <div className="w-full h-screen flex flex-wrap justify-center items-center">
+            <button className="bg-blue-600 text-white px-4 py-3 rounded-lg" onClick={decCounter}>-</button>
+            <h1 className="px-4">{counter}</h1>
+            <button className="bg-blue-600 text-white px-4 py-3 rounded-lg" onClick={incCounter}>+</button>
+        </div>
+
     </>
 }
 

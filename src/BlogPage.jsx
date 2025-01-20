@@ -1,6 +1,8 @@
+import { useParams } from "react-router-dom";
 import Blog from "./components/Blog";
 
 function BlogPage() {
+    const { username } = useParams();
 
     const tags = ["Maths", "Statistics"];
     const user = {
@@ -12,7 +14,7 @@ function BlogPage() {
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">From the blog</h2>
+                    <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">From the blog {username}</h2>
                     <p className="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p>
                 </div>
 
