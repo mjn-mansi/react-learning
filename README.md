@@ -25,5 +25,12 @@ const memoizedCallback = useCallback(() => {
   // function body
 }, [dependency1, dependency2]);
 
+We are passing function & dependencies here.
+
 
 ********************************* useEffect *********************************
+jb component mount hota hai.. Lifecycle event trigger hota hai, tb use hota hai
+
+
+********************************* useREf *********************************
+kisi cheez ka reference lena hota, to use hota,, then we can manipulate that
