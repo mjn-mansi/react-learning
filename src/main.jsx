@@ -7,8 +7,8 @@ import PasswordGenerator from './PasswordGenerator.jsx'
 import CurrencyConvertor from './CurrencyConvertor.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import Blog from './components/Blog.jsx'
 import BlogPage from './BlogPage.jsx'
+import User from './User.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -34,6 +34,7 @@ const router = createBrowserRouter(
       <Route path='currency-convertor' element={<CurrencyConvertor />}></Route>
       <Route path='password-generator' element={<PasswordGenerator />}></Route>
       <Route path='blogs/:username' element={<BlogPage />}></Route>
+      <Route path='login' element={<User />}></Route>
     </Route>
   )
 )
